@@ -13,9 +13,12 @@ public class Area {
 
         if (input.hasNextDouble()) {
             radius = input.nextDouble();
-            if (radius <= 0) {
+
+            // While loop to wait for non-neg number.
+            while (radius <= 0) {
                 System.out.println("Error: Must be non-negative");
-                return;
+                System.out.println("Enter a number: ");
+                radius = input.nextDouble();
             }
             System.out.println("Area: " + Circle.getArea(radius));
             return;
