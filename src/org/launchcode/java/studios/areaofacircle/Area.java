@@ -7,7 +7,6 @@ public class Area {
     public static void main(String[] args) {
         Scanner input;
         input = new Scanner(System.in);
-        double pi = 3.14;
         double radius;
         System.out.println("Enter the radius of the circle.");
 
@@ -21,10 +20,8 @@ public class Area {
                 radius = input.nextDouble();
             }
             System.out.println("Area: " + Circle.getArea(radius));
-            return;
         } else {
             System.out.println("Error: Must enter a number");
-            return;
         }
 
     }
