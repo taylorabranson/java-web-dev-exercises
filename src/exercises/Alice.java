@@ -14,11 +14,19 @@ public class Alice {
 
         Scanner input;
         input = new Scanner(System.in);
+
+        // User input string for search
         System.out.println("Search for a string of characters");
         String search = input.nextLine();
+        search = search.toLowerCase();
+
+        // print search results
         System.out.println(sentence.contains(search));
+
+        // Remove text from sentence
         sentence = sentence.replace(search, "");
         System.out.println(sentence);
+
         input.close();
     }
 }
