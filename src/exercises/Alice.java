@@ -22,6 +22,8 @@ public class Alice {
 
         // print search results
         System.out.println(sentence.contains(search));
+        System.out.println(sentence.indexOf(search));
+        System.out.println(search.length());
 
         // Remove text from sentence
         sentence = sentence.replace(search, "");
