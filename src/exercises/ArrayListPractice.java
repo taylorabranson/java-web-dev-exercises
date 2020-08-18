@@ -8,7 +8,7 @@ public class ArrayListPractice {
 
     public static void main(String[] arg) {
 
-        ArrayList<Integer> someNumbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        ArrayList<Integer> someNumbers = new ArrayList<>(Arrays.asList(1, 1, 2, 5, 3, 4, 7, 6, 8, 9));
         System.out.println(sum(someNumbers));
 
         ArrayList<String> wordList = new ArrayList<>(Arrays.asList("shoes", "shoe", "hats", "hat", "waffle", "truck"));
@@ -26,7 +26,10 @@ public class ArrayListPractice {
         Integer sum = 0;
 
         for (Integer number : someNumbers) {
-            sum += number;
+            if (number % 2 == 0) {
+                sum += number;
+            }
+
         }
 
         return sum;
