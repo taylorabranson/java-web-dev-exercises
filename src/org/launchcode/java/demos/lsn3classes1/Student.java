@@ -27,7 +27,7 @@ public class Student {
         return name;
     }
 
-    public void setName(String aName) {
+    protected void setName(String aName) {
         name = aName;
     }
 
@@ -35,7 +35,7 @@ public class Student {
         return studentId;
     }
 
-    public void setStudentId(int aStudentId) {
+    protected void setStudentId(int aStudentId) {
         studentId = aStudentId;
     }
 
@@ -43,7 +43,7 @@ public class Student {
         return numberOfCredits;
     }
 
-    public void setNumberOfCredits(int aNumberOfCredits) {
+    protected void setNumberOfCredits(int aNumberOfCredits) {
         numberOfCredits = aNumberOfCredits;
     }
 
@@ -51,7 +51,11 @@ public class Student {
         return gpa;
     }
 
-    public void setGpa(double aGpa) {
+    protected void setGpa(double aGpa) {
         gpa = aGpa;
+    }
+
+    public String studentInfo() {
+         return (this.name + " has a GPA of: " + this.gpa);
     }
 }
