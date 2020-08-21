@@ -28,11 +28,20 @@ public class Student {
         return (this.name + " has a GPA of: " + this.gpa);
     }
 
-
-     //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
-//        // Determine the grade level of the student based on numberOfCredits
-//    }
+    public String getGradeLevel() {
+        // Determine the grade level of the student based on numberOfCredits
+        if (numberOfCredits >= 0 && numberOfCredits < 30) {
+            return "Freshman";
+        } else if (numberOfCredits >= 30 && numberOfCredits < 60) {
+            return "Sophomore";
+        } else if (numberOfCredits >= 60 && numberOfCredits < 90) {
+            return "Junior";
+        } else if (numberOfCredits >= 90) {
+            return "Senior";
+        } else {
+            return "Grade Level Unknown";
+        }
+    }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
