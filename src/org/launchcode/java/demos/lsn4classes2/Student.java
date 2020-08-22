@@ -1,5 +1,7 @@
 package org.launchcode.java.demos.lsn4classes2;
 
+import java.util.Objects;
+
 public class Student {
 
     private static int nextStudentId = 1;
@@ -51,9 +53,6 @@ public class Student {
         setGpa(totalQualityScore / getNumberOfCredits());
     }
 
-    // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
-    //  than just the class fields.
-
     @Override
     public String toString() {
         return name + " (ID: " + studentId + ") " +
@@ -62,9 +61,19 @@ public class Student {
                 ".";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return studentId == student.studentId &&
+                name.equals(student.name);
+    }
 
-    // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
-    //  Student objects equal.
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, studentId);
+    }
 
     public String getName() {
         return name;
