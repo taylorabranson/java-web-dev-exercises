@@ -6,25 +6,35 @@ import java.util.ArrayList;
 public class Course {
 
     private String name;
+    private String instructor;
     private int creditHours;
     private ArrayList<Student> roster;
 
-    public Course(String name, int creditHours, ArrayList<Student> roster) {
+    public Course(String name, String instructor, int creditHours, ArrayList<Student> roster) {
         this.name = name;
+        this.name = instructor;
         this.creditHours = creditHours;
         this.roster = roster;
     }
 
-    public Course(String name, int creditHours) {
-        this(name, creditHours, new ArrayList<Student>());
+    public Course(String name, String instructor, int creditHours) {
+        this(name, instructor, creditHours, new ArrayList<Student>());
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String aName) {
-        this.name = aName;
+        name = aName;
+    }
+
+    public String getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(String aInstructor) {
+        instructor = aInstructor;
     }
 
     public int getCreditHours() {
@@ -32,7 +42,7 @@ public class Course {
     }
 
     public void setCreditHours(int aCreditHours) {
-        this.creditHours = aCreditHours;
+        creditHours = aCreditHours;
     }
 
     public ArrayList<Student> getRoster() {
@@ -40,6 +50,6 @@ public class Course {
     }
 
     private void setRoster(ArrayList<Student> aRoster) {
-        this.roster = aRoster;
+        roster = aRoster;
     }
 }
