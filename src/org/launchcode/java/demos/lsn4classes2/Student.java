@@ -43,7 +43,6 @@ public class Student {
         }
     }
 
-    // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
         double totalQualityScore = getGpa() * getNumberOfCredits();
@@ -54,6 +53,15 @@ public class Student {
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+
+    @Override
+    public String toString() {
+        return name + " (ID: " + studentId + ") " +
+                "has " + numberOfCredits + " credits" +
+                " and a GPA of " + gpa +
+                ".";
+    }
+
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
