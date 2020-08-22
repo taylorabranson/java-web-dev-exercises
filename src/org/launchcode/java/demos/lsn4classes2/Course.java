@@ -3,6 +3,7 @@ package org.launchcode.java.demos.lsn4classes2;
 import org.launchcode.java.demos.lsn3classes1.Student;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 
 public class Course {
@@ -31,10 +32,19 @@ public class Course {
                 "  Enrolled Students: " + roster.size();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Course course = (Course) o;
+        return name.equals(course.name) &&
+                instructor.equals(course.instructor);
+    }
 
-    // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
-    //  Course objects equal.
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, instructor);
+    }
 
     public String getName() {
         return name;
