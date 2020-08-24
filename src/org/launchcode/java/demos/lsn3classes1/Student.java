@@ -24,35 +24,35 @@ public class Student {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String aName) {
-        name = aName;
+        this.name = aName;
     }
 
     public int getStudentId() {
-        return studentId;
+        return this.studentId;
     }
 
     public void setStudentId(int aStudentId) {
-        studentId = aStudentId;
+        this.studentId = aStudentId;
     }
 
     public int getNumberOfCredits() {
-        return numberOfCredits;
+        return this.numberOfCredits;
     }
 
     public void setNumberOfCredits(int aNumberOfCredits) {
-        numberOfCredits = aNumberOfCredits;
+        this.numberOfCredits = aNumberOfCredits;
     }
 
     public double getGpa() {
-        return gpa;
+        return this.gpa;
     }
 
     public void setGpa(double aGpa) {
-        gpa = aGpa;
+        this.gpa = aGpa;
     }
 
     public String studentInfo() {

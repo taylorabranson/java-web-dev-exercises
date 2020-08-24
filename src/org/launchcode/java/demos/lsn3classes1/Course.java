@@ -22,34 +22,34 @@ public class Course {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String aName) {
-        name = aName;
+        this.name = aName;
     }
 
     public String getInstructor() {
-        return instructor;
+        return this.instructor;
     }
 
     public void setInstructor(String aInstructor) {
-        instructor = aInstructor;
+        this.instructor = aInstructor;
     }
 
     public int getCreditHours() {
-        return creditHours;
+        return this.creditHours;
     }
 
     public void setCreditHours(int aCreditHours) {
-        creditHours = aCreditHours;
+        this.creditHours = aCreditHours;
     }
 
     public ArrayList<Student> getRoster() {
-        return roster;
+        return this.roster;
     }
 
     private void setRoster(ArrayList<Student> aRoster) {
-        roster = aRoster;
+        this.roster = aRoster;
     }
 }

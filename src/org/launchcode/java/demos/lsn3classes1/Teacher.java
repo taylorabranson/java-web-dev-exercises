@@ -19,7 +19,7 @@ public class Teacher {
     }
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public void setLastName(String aLastName) {
@@ -27,7 +27,7 @@ public class Teacher {
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public void setSubject(String aSubject) {
@@ -35,7 +35,7 @@ public class Teacher {
     }
 
     public String getSubject() {
-        return subject;
+        return this.subject;
     }
 
     public void setYearsTeaching(int aYearsTeaching) {
@@ -43,6 +43,6 @@ public class Teacher {
     }
 
     public int getYearsTeaching() {
-        return yearsTeaching;
+        return this.yearsTeaching;
     }
 }
