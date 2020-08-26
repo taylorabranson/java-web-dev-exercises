@@ -11,7 +11,6 @@ public class Student {
     private int numberOfCredits;
     private double gpa;
 
-
     public Student(String name, int studentId, int numberOfCredits, double gpa) {
         this.name = name;
         this.studentId = studentId;
@@ -43,7 +42,7 @@ public class Student {
         return this.numberOfCredits;
     }
 
-    public void setNumberOfCredits(int aNumberOfCredits) {
+    private void setNumberOfCredits(int aNumberOfCredits) {
         this.numberOfCredits = aNumberOfCredits;
     }
 
@@ -51,11 +50,11 @@ public class Student {
         return this.gpa;
     }
 
-    public void setGpa(double aGpa) {
+    private void setGpa(double aGpa) {
         this.gpa = aGpa;
     }
 
     public String studentInfo() {
-         return (this.name + " has a GPA of: " + this.gpa);
+         return (getName() + " (ID:" + getStudentId() + ") " + "has a GPA of " + getGpa() + " and has " + getNumberOfCredits() + " credits.");
     }
 }

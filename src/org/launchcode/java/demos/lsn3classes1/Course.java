@@ -2,23 +2,22 @@ package org.launchcode.java.demos.lsn3classes1;
 
 import java.util.ArrayList;
 
-
 public class Course {
 
     private String name;
     private String instructor;
-    private int creditHours;
+    private double credits;
     private ArrayList<Student> roster;
 
-    public Course(String name, String instructor, int creditHours, ArrayList<Student> roster) {
+    public Course(String name, String instructor, double credits, ArrayList<Student> roster) {
         this.name = name;
         this.name = instructor;
-        this.creditHours = creditHours;
+        this.credits = credits;
         this.roster = roster;
     }
 
-    public Course(String name, String instructor, int creditHours) {
-        this(name, instructor, creditHours, new ArrayList<Student>());
+    public Course(String name, String instructor, double credits) {
+        this(name, instructor, credits, new ArrayList<Student>());
     }
 
     public String getName() {
@@ -37,12 +36,12 @@ public class Course {
         this.instructor = aInstructor;
     }
 
-    public int getCreditHours() {
-        return this.creditHours;
+    public double getCreditHours() {
+        return this.credits;
     }
 
-    public void setCreditHours(int aCreditHours) {
-        this.creditHours = aCreditHours;
+    public void setCreditHours(double aCreditHours) {
+        this.credits = aCreditHours;
     }
 
     public ArrayList<Student> getRoster() {

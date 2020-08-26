@@ -45,4 +45,8 @@ public class Teacher {
     public int getYearsTeaching() {
         return this.yearsTeaching;
     }
+
+    public String teacherInfo() {
+        return (getFirstName() + ' ' + getLastName() + " teaches " + getSubject() + " and has taught for " + getYearsTeaching() + " years." );
+    }
 }
