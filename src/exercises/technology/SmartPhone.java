@@ -4,11 +4,13 @@ public class SmartPhone extends Computer {
 
     private double size;
     private boolean isUpgradeable;
+    private String network;
 
-    public SmartPhone(String model, int memory, int storage, double size, boolean isUpgradeable) {
+    public SmartPhone(String model, int memory, int storage, double size, boolean isUpgradeable, String network) {
         super(model, memory, storage);
         this.size = size;
         this.isUpgradeable = isUpgradeable;
+        this.network = network;
     }
 
     // Getters and Setters
@@ -20,6 +22,10 @@ public class SmartPhone extends Computer {
         return isUpgradeable;
     }
 
+    public String getNetwork() {
+        return network;
+    }
+
     // Override abstract methods
     @Override
     public void printInfo() {
@@ -28,6 +34,7 @@ public class SmartPhone extends Computer {
         System.out.println("Storage: " + getStorage());
         System.out.println("Screen Size: " + getSize());
         System.out.println("Upgradeable: " + getIsUpgradeable());
+        System.out.println("Network: " + getNetwork());
         System.out.println("ID: " + getId());
     }
 
