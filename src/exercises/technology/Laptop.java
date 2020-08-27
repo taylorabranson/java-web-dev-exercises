@@ -28,6 +28,8 @@ public class Laptop extends Computer {
         System.out.println("Storage: " + getStorage());
         System.out.println("Screen Size: " + getSize());
         System.out.println("Upgradeable: " + getIsUpgradeable());
+        System.out.println("ID: " + getId());
+
     }
 
     @Override
