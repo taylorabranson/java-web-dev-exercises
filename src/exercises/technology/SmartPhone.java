@@ -16,16 +16,8 @@ public class SmartPhone extends Computer {
         return size;
     }
 
-    private void setSize(int size) {
-        this.size = size;
-    }
-
     public boolean getIsUpgradeable() {
         return isUpgradeable;
-    }
-
-    private void setIsUpgradeable() {
-        this.isUpgradeable = isUpgradeable;
     }
 
 
