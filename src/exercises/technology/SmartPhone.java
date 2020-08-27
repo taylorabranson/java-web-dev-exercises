@@ -20,7 +20,6 @@ public class SmartPhone extends Computer {
         return isUpgradeable;
     }
 
-
     // Override abstract methods
     @Override
     public void printInfo() {
@@ -29,6 +28,7 @@ public class SmartPhone extends Computer {
         System.out.println("Storage: " + getStorage());
         System.out.println("Screen Size: " + getSize());
         System.out.println("Upgradeable: " + getIsUpgradeable());
+        System.out.println("ID: " + getId());
     }
 
     @Override
