@@ -12,12 +12,15 @@ public abstract class Computer {
         this.storage = storage;
     }
 
+    // Abstract functions
     public abstract void printInfo();
 
-    public abstract void upgradeMemory();
+    public abstract void upgradeMemory(int newMemory);
 
-    public abstract void upgradeStorage();
+    public abstract void upgradeStorage(int newStorage);
 
+
+    // Getters and Setters
     public String getModel() {
         return model;
     }
@@ -30,7 +33,7 @@ public abstract class Computer {
         return memory;
     }
 
-    private void setMemory(int memory) {
+    protected void setMemory(int memory) {
         this.memory = memory;
     }
 
@@ -38,7 +41,7 @@ public abstract class Computer {
         return storage;
     }
 
-    private void setStorage(int storage) {
+    protected void setStorage(int storage) {
         this.storage = storage;
     }
 }
