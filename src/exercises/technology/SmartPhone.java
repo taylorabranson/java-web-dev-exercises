@@ -2,17 +2,17 @@ package exercises.technology;
 
 public class SmartPhone extends Computer {
 
-    private int size;
+    private double size;
     private boolean isUpgradeable;
 
-    public SmartPhone(String model, int memory, int storage, int size, boolean isUpgradeable) {
+    public SmartPhone(String model, int memory, int storage, double size, boolean isUpgradeable) {
         super(model, memory, storage);
         this.size = size;
         this.isUpgradeable = isUpgradeable;
     }
 
     // Getters and Setters
-    public int getSize() {
+    public double getSize() {
         return size;
     }
 
@@ -26,8 +26,8 @@ public class SmartPhone extends Computer {
     public void printInfo() {
         System.out.println("Model: " + getModel());
         System.out.println("RAM: " + getMemory());
-        System.out.println("Storage " + getStorage());
-        System.out.println("Size " + getSize());
+        System.out.println("Storage: " + getStorage());
+        System.out.println("Screen Size: " + getSize());
         System.out.println("Upgradeable: " + getIsUpgradeable());
     }
 

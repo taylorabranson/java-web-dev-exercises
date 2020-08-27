@@ -2,17 +2,17 @@ package exercises.technology;
 
 public class Laptop extends Computer {
 
-    private int size;
+    private double size;
     private boolean isUpgradeable;
 
-    public Laptop(String name, int memory, int storage, int size, boolean isUpgradeable) {
+    public Laptop(String name, int memory, int storage, double size, boolean isUpgradeable) {
         super(name, memory, storage);
         this.size = size;
         this.isUpgradeable = isUpgradeable;
     }
 
     // Getters and Setters
-    public int getSize() {
+    public double getSize() {
         return size;
     }
 
@@ -25,8 +25,8 @@ public class Laptop extends Computer {
     public void printInfo() {
         System.out.println("Model: " + getModel());
         System.out.println("RAM: " + getMemory());
-        System.out.println("Storage " + getStorage());
-        System.out.println("Size " + getSize());
+        System.out.println("Storage: " + getStorage());
+        System.out.println("Screen Size: " + getSize());
         System.out.println("Upgradeable: " + getIsUpgradeable());
     }
 
