@@ -1,7 +1,6 @@
 package exercises.technology.tests;
 
 import exercises.technology.Laptop;
-import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
