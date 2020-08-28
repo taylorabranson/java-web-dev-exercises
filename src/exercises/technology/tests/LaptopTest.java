@@ -15,8 +15,8 @@ public class LaptopTest {
 
     @Test
     public void atestInheritedIdNumber() {
-        System.out.println(test_laptop.getId());
         assertEquals(1, test_laptop.getId());
+        assertEquals(2, test_laptop2.getId());
     }
 
     @Test
