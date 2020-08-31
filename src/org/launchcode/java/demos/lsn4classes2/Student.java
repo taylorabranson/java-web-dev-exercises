@@ -47,10 +47,10 @@ public class Student {
 
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
-        double totalQualityScore = getGpa() * getNumberOfCredits();
+        double totalQualityScore = this.gpa * this.numberOfCredits;
         totalQualityScore += (grade * courseCredits);
-        setNumberOfCredits(getNumberOfCredits() + courseCredits);
-        setGpa(totalQualityScore / getNumberOfCredits());
+        this.numberOfCredits = this.numberOfCredits + courseCredits;
+        this.gpa = totalQualityScore / this.numberOfCredits;
     }
 
     @Override
